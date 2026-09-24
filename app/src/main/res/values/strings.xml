@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Student Profile</string>
+    <string name="title_student_profile">Student Profile</string>
+    <string name="title_my_profile">My Profile</string>
+    <string name="label_pick_photo">Ketuk untuk Pilih Foto</string>
+
+    <string name="label_nama_lengkap">Nama Lengkap</string>
+    <string name="label_nrp">NRP</string>
+    <string name="label_phone">Nomor Telepon</string>
+    <string name="label_jurusan">Jurusan</string>
+    <string name="label_semester">Semester</string>
+    <string name="label_gender">Jenis Kelamin</string>
+
+    <string name="gender_male">Laki-laki</string>
+    <string name="gender_female">Perempuan</string>
+
+    <string name="btn_lanjut">LANJUT</string>
+    <string name="btn_edit">EDIT</string>
+
+    <string name="error_required">Field ini wajib diisi!</string>
+    <string name="error_photo">Tolong pilih foto terlebih dahulu!</string>
+    <string name="error_gender">Pilih jenis kelamin!</string>
+
+    <string-array name="jurusan_array">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Data Science</item>
+        <item>Teknik Komputer</item>
+        <item>Teknik Elektro</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+        <item>Semester 7</item>
+        <item>Semester 8</item>
+    </string-array>
+</resources>

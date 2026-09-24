@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_navy_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/title_my_profile"
+            android:textColor="@color/text_white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile_result"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@color/bg_navy_medium"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.App.Circle"
+                app:strokeColor="@color/card_border"
+                app:strokeWidth="3dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="24dp"
+                android:background="@color/card_border" />
+
+            <!-- Display Data -->
+            <TextView style="@style/LabelStyle" android:text="@string/label_nama_lengkap" />
+            <TextView android:id="@+id/tv_res_nama" style="@style/ResultDataStyle" android:text="Budi Santoso" />
+
+            <TextView style="@style/LabelStyle" android:text="@string/label_nrp" />
+            <TextView android:id="@+id/tv_res_nrp" style="@style/ResultDataStyle" android:text="5025211XXX" />
+
+            <TextView style="@style/LabelStyle" android:text="@string/label_jurusan" />
+            <TextView android:id="@+id/tv_res_jurusan" style="@style/ResultDataStyle" android:text="Teknik Informatika" />
+
+            <TextView style="@style/LabelStyle" android:text="@string/label_semester" />
+            <TextView android:id="@+id/tv_res_semester" style="@style/ResultDataStyle" android:text="Semester 5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@+id/btn_action_phone">
+
+                    <TextView style="@style/LabelStyle" android:text="@string/label_phone" />
+                    <TextView android:id="@+id/tv_res_phone" style="@style/ResultDataStyle" android:text="08123456789" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_action_phone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/whatsapp_green"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/stat_notify_chat"
+                        app:tint="@color/text_white"
+                        android:contentDescription="WhatsApp" />
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <TextView style="@style/LabelStyle" android:text="@string/label_gender" />
+            <TextView android:id="@+id/tv_res_gender" style="@style/ResultDataStyle" android:text="Laki-laki" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_web_its"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Buka Website Kampus"
+                android:textColor="@color/blue_bright"
+                app:icon="@android:drawable/ic_menu_search"
+                app:iconTint="@color/blue_bright" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_button_gradient"
+            android:text="@string/btn_edit"
+            android:textColor="@color/text_white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
